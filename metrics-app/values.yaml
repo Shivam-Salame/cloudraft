@@ -1,0 +1,13 @@
+replicaCount: 1
+ 
+image:
+  repository: ghcr.io/cloudraftio/metrics-app
+  tag: "1.4"
+  pullPolicy: IfNotPresent
+ 
+secret:
+  PASSWORD: MYPASSWORD
+ 
+service:
+  type: ClusterIP
+  port: 8080
